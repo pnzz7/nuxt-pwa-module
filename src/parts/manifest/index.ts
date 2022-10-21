@@ -29,5 +29,6 @@ export default (pwa: PWAContext) => {
   pwa._manifestMeta = {
     rel: 'manifest',
     href: joinURL(nuxt.options.app.baseURL, 'manifest.json'),
+    crossorigin: 'use-credentials',
   }
 }
